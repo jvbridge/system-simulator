@@ -1,6 +1,4 @@
-# Game balance simulator
-
-What is this? 
+### What is this? 
 
 This is a game balance simulator. It is used in order to simulate resources 
 gained/lost over periods of time in order to figure out good numbers to use for
