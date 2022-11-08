@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
 
-import Header from './components/header/main';
-import Footer from './components/footer/main';
+import Header from './components/header';
+import Footer from './components/footer';
 
-import infoPage from './pages/info';
+import InfoPage from './pages/info';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <infoPage />
+      <InfoPage></InfoPage>
       <Footer></Footer>
     </div>
   );

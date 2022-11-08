@@ -1,11 +1,11 @@
 import ReactMarkdown from "react-markdown";
 
-function infoPage (){
+function InfoPage (){
   return ( 
   <>
-  <ReactMarkdown>
+  {/* <ReactMarkdown>
     #hello World
-  </ReactMarkdown>
+  </ReactMarkdown> */}
   <p>
     This is the info tag
   </p>
@@ -13,4 +13,4 @@ function infoPage (){
   )
 }
 
-export default infoPage;
+export default InfoPage;
