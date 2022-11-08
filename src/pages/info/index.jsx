@@ -4,6 +4,7 @@ import markdownPath from './info.md'
 
  function InfoPage (){
 
+  // fetching the separate file we use for markdown
   const [markdownText, setMarkdownText] = useState("Loading...");
 
   const fetchInfo = async () =>{
@@ -19,6 +20,7 @@ import markdownPath from './info.md'
 
   fetchInfo();
 
+  // render the markdown
   return ( 
   <ReactMarkdown children={markdownText}/>
   )
