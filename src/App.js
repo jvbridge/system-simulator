@@ -5,7 +5,6 @@ import { Button, Modal } from 'react-bootstrap';
 
 // custom components
 import Header from './components/header';
-import Footer from './components/footer';
 
 // pages
 import InfoPage from './pages/info';
@@ -30,7 +29,6 @@ function App() {
         </Modal.Footer>
       </Modal>
       <Header showInfo={showInfo}></Header>
-      <Footer></Footer>
     </div>
   );
 }
