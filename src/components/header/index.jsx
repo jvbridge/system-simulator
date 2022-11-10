@@ -8,7 +8,6 @@ function Header({showInfo}){
       <Navbar.Collapse id="basic-navbar-nav" >
 
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link onClick={showInfo}>Info</Nav.Link>
 
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
