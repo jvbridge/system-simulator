@@ -1,7 +1,11 @@
-import { Navbar } from "react-bootstrap";
+
+import InstallPWA from "../install";
 
 function Footer(){
-  return <Navbar>Footer</Navbar>
+  return <>
+    Install Button Header
+    <InstallPWA />
+  </>
 }
 
 export default Footer
