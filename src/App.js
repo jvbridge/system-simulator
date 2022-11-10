@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+import { Button, Modal } from 'react-bootstrap';
+
+// custom components
+import Header from './components/header';
+
+// pages
+import InfoPage from './pages/info';
+
 function App() {
+  const [infoVisible, setInfoVisible] = useState(false);
+
+  const showInfo = () => setInfoVisible(true);
+  const hideInfo = () => setInfoVisible(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Modal show={infoVisible} onHide={hideInfo}>
+        <Modal.Header closeButton>
+          <Modal.Title>Game Balance Simulator</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <InfoPage />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={hideInfo}>Got it!</Button>
+        </Modal.Footer>
+      </Modal>
+      <Header showInfo={showInfo}></Header>
     </div>
   );
 }
