@@ -8,6 +8,7 @@ import Header from './components/header';
 
 // pages
 import InfoPage from './pages/info';
+import MainPage from './pages/mainPage';
 
 function App() {
   const [infoVisible, setInfoVisible] = useState(false);
@@ -29,6 +30,7 @@ function App() {
         </Modal.Footer>
       </Modal>
       <Header showInfo={showInfo}></Header>
+      <MainPage></MainPage>
     </div>
   );
 }
