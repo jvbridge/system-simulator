@@ -12,20 +12,20 @@ export default function MainPage(){
   return ( 
     <div className="mainBody">
       <div className="created tiles">
-      { tiles.map((curr) => {
+      {tiles.map((curr) => {
           return (<div className="m-2" key={curr}><BasicTile /></div>)
         }
       )}
       </div>
       <div className="createTile mx-2">
-        <Card>
-          <Card.Body>
-          <button className="circle plus" onClick={()=>{
+        <Card onClick={()=>{
             const tmp = tiles;
             tmp.push(incrementer)
             setTiles(tmp)
             setIncrementer(incrementer + 1);
-          }}></button>
+          }}>
+          <Card.Body>
+          <button className="circle plus" ></button>
           </Card.Body>
         </Card>
       </div>
