@@ -1,3 +1,4 @@
+import BasicTile from "../../components/basic"
 export default function main(){
-  return <main>main</main>
+  return <BasicTile />
 }
